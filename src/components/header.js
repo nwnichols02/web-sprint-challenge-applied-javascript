@@ -1,4 +1,7 @@
+import axios from "axios";
+
 // import { createBroadcastChannel } from "msw/lib/types/utils/createBroadcastChannel";
+console.log('hello world.')
 
 const Header = (title, date, temp) => {
 
@@ -18,7 +21,7 @@ const Header = (title, date, temp) => {
   dateSpan.textContent = date;
   titleH1.textContent = title;
   tempSpan.textContent = temp;
-  console.log(header);
+  // console.log(header);
   return header;
 
   // TASK 1
@@ -35,11 +38,14 @@ const Header = (title, date, temp) => {
   //
 }
 
-console.log(Header())
+Header('lambda', 'date', 'temp')
 
 const headerAppender = (selector) => {
+  let one = document.querySelector(selector);
 
-  const addToDOM = document.querySelector('header-container').appendChild(Header(Lambda, January, 25))
+  one.appendChild(Header('Lambda Times', 'January 6, 2021', '26°'));
+
+  return one;
 
   // TASK 2
   // ---------------------
@@ -47,7 +53,6 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
-  console.log(addToDOM)
 }
 
 
