@@ -1,4 +1,25 @@
 const Tabs = (topics) => {
+
+  const topicsDiv = document.createElement('div');
+  const javascriptDiv = document.createElement('div');
+  const bootstrapDiv = document.createElement('div');
+  const technologyDiv = document.createElement('div');
+
+  topicsDiv.appendChild(javascriptDiv);
+  topicsDiv.appendChild(bootstrapDiv);
+  topicsDiv.appendChild(technologyDiv);
+
+  topicsDiv.classList.add('topics');
+  javascriptDiv.classList.add('tab');
+  bootstrapDiv.classList.add('tab');
+  technologyDiv.classList.add('tab');
+
+  javascriptDiv.textContent = 'javascript';
+  bootstrapDiv.textContent = 'bootstrap';
+  technologyDiv.textContent = 'technology';
+
+  return topicsDiv;
+  
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
