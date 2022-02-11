@@ -14,12 +14,12 @@ const Tabs = (topics) => {
   bootstrapDiv.classList.add('tab');
   technologyDiv.classList.add('tab');
 
-  javascriptDiv.textContent = 'javascript';
-  bootstrapDiv.textContent = 'bootstrap';
-  technologyDiv.textContent = 'technology';
+  javascriptDiv.textContent = topics[0];
+  bootstrapDiv.textContent = topics[1];
+  technologyDiv.textContent = topics[2];
 
   return topicsDiv;
-  
+
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.

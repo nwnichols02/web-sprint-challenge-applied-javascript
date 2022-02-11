@@ -41,11 +41,11 @@ const Header = (title, date, temp) => {
 Header('lambda', 'date', 'temp')
 
 const headerAppender = (selector) => {
-  let one = document.querySelector(selector);
+  let appendElement = document.querySelector(selector);
 
-  one.appendChild(Header('Lambda Times', 'January 6, 2021', '26°'));
+  appendElement.appendChild(Header('Lambda Times', 'January 6, 2021', '26°'));
 
-  return one;
+  return appendElement;
 
   // TASK 2
   // ---------------------
